@@ -1,0 +1,64 @@
+.dark-mode{
+    background-color: black;
+    color: white;
+    }
+
+    button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+    }
+
+   #toggle {
+       position: absolute;
+       top: 10px;
+       right: 10px;
+       background: none;
+       border: none;
+       cursor: pointer;
+       font-size: 24px;
+   }
+
+   #toggle i {
+       transition: opacity 0.3s ease;
+   }
+
+   #sun-icon {
+       color: gold;
+   }
+
+   #moon-icon {
+       color: white;
+   }
+   
+   
+   .header {
+    overflow: hidden;
+    padding: 20px 10px;
+  }
+
+  .button-grp {
+    float: right;
+  }
+
+  button{
+        background-color: white;
+        color: black;
+        border: 2px solid #e7e7e7;   
+        border: none;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer; 
+  }
+  button:hover {background-color: #e7e7e7;}
+
+
+.book-display{
+    padding: 200px;
+
+}
