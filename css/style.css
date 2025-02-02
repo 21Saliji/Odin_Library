@@ -1,7 +1,7 @@
-.dark-mode{
+/* .dark-mode{
     background-color: black;
     color: white;
-    }
+    } */
 
     button {
     font-size: 16px;
@@ -32,33 +32,95 @@
    }
    
    
+   
    .header {
-    overflow: hidden;
-    padding: 20px 10px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .button-grp {
-    float: right;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
 
   button{
-        background-color: white;
-        color: black;
-        border: 2px solid #e7e7e7;   
-        border: none;
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer; 
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
   }
-  button:hover {background-color: #e7e7e7;}
+  button:hover {
+    background-color: #45a049;
+}
 
 
-.book-display{
-    padding: 200px;
+.book-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    max-width: 200px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
+#book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.new-book-form-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.new-book-form-modal input,
+.new-book-form-modal select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.new-book-form-modal button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.new-book-form-modal button:hover {
+    background-color: #45a049;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+
+
+body.dark-mode .book-card {
+    background-color: #222;
+    border-color: #444;
+}
+
+body.dark-mode .new-book-form-modal {
+    background-color: #333;
+    color: #fff;
 }
