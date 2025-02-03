@@ -8,42 +8,36 @@
     <title>Odin Library</title>
 </head>
 <body>
- <div class="header">
-    <h1>Odin Library</h1>
-    <button id="toggle" onclick="myFunction()">
-        <i class='bx bx-sun' id="sun-icon"></i>
-        <i class='bx bx-moon' id="moon-icon" ></i>
-    </button>
- <div class="button-grp">
-    <button id="newBookBtn">New Book</button>
-    <button id="clearBooksBtn">Clear Books</button>
- </div>
- </div>   
+    <div class="header">
+        <h1>Odin Library</h1>
+        <button id="toggle">  <i class='bx bx-sun' id="sun-icon"></i>
+            <i class='bx bx-moon' id="moon-icon" ></i>
+        </button>
+        <div class="button-grp">
+            <button id="newBookBtn">New Book</button>
+            <button id="clearBooksBtn">Clear Books</button> </div>
+    </div>    
 
+    <div id="newBookFormModal" class="new-book-form-modal">
+        <form id="newBookForm">
+            <h3>Add a New Book</h3>
+            <input type="text" id="bookTitle" placeholder="Title" required />
+            <input type="text" id="bookAuthor" placeholder="Author" required />
+            <input type="number" id="bookPages" placeholder="Pages" required />
+            <label for="bookReadStatus">Read:</label>
+            <select id="bookReadStatus">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+            <button type="submit" id="submitNewBook">Submit</button>
+            <button type="button" id="cancelNewBook">Cancel</button>
+        </form>
+    </div>
 
- <div id="newBookFormModal" class="new-book-form-modal">
-   <form id="newBookForm">
-       <h3>Add a New Book</h3>
-       <input type="text" id="bookTitle" placeholder="Title" required />
-       <input type="text" id="bookAuthor" placeholder="Author" required />
-       <input type="number" id="bookPages" placeholder="Pages" required />
-       <label for="bookReadStatus">Read:</label>
-       <select id="bookReadStatus">
-           <option value="true">Yes</option>
-           <option value="false">No</option>
-       </select>
-       <button type="submit" id="submitNewBook">Submit</button>
-       <button type="button" id="cancelNewBook">Cancel</button>
-   </form>
-</div>
+    <div class="book-display">
+        <h2>These are books available in your Library</h2>
+        <div id="book-container"></div>  </div>
 
-
- <div class="book-display">
-    <h2>These are books available in your Library</h2>
-    <div id="book-container"></div>
- </div>
-
-
- <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
